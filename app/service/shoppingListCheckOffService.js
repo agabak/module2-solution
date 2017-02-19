@@ -1,7 +1,7 @@
 (function () {
    'use strict';
 
-   angular.module()
+   angular.module('shoppingListCheckOff')
        .service('shoppingListCheckOffService',shoppingListCheckOffService);
 
        function shoppingListCheckOffService() {
