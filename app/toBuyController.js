@@ -7,7 +7,7 @@
 
      function toBuyController() {
           var toBuyItem = this;
-             vm.arrayItems = [
+             toBuyItem.arrayItems = [
                 { name: "cookies", quantity: 10 },
                 { name: "loaf of bread", quantity: 1 },
                 { name: "Gallon of milk", quantity: 1},
