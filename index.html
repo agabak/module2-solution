@@ -31,9 +31,8 @@
     <!-- To Buy List -->
     <div class="col-md-6"  ng-controller="toBuyController as toBuyItem">
      <h2>To Buy:{{toBuyItem.title}}</h2>
-     <ul>
-       <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
-       <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
+     <ul ng-repeat="item in vm.arrayItems">
+       <li>Buy {{item.quantity}}   {{item.name}} <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
      </ul>
      <div class="emptyMessage">Everything is bought!</div>
     </div>
