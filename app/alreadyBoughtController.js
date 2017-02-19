@@ -7,6 +7,6 @@
 
      function alreadyBoughtController() {
           var alreadyBoughtItem = this;
-          alreadyBoughtItem.title = "Already Bought"
+          alreadyBoughtItem.title = "Items List"
      };
 }());
