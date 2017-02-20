@@ -11,10 +11,18 @@
           { name: "Orange", quantity: 8 },
           { name: "cookies", quantity: 10 }
       ];
+
+      var alreadItem  = [];
+
        function shoppingListCheckOffService() {
                var  service =  this;
               service.getItems = function () {
                   return items;
+              };
+
+              service.removeItem = function(index){
+                var item =  items.splice(index,1);
+                 console.log(item)                  
               };
        };
 }());
