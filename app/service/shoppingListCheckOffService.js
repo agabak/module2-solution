@@ -23,10 +23,11 @@
 
               service.removeItem = function(index){
                 data =  items.splice(index,1);
-                var item  = data[index];
-
-                console.log(item['name']);
-                 console.log(data[index]);
+                var item  ={
+                   name:data[index]['name'],
+                   quantity:data[index]['quantity']
+                };
+                console.log(item);
               };
        };
 }());
