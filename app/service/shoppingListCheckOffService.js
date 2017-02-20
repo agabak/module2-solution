@@ -14,6 +14,7 @@
 
       var alreadItem  = [];
       var data ={};
+      var item = {};
 
        function shoppingListCheckOffService() {
                var  service =  this;
@@ -23,11 +24,15 @@
 
               service.removeItem = function(index){
                 data =  items.splice(index,1);
-                var item  ={
+                item  ={
                    name:data[index]['name'],
                    quantity:data[index]['quantity']
                 };
-                console.log(item);
-              };
+                alreadItem.push(item);
+            };
+
+            service.addItem = function(){
+              return alreadItem;
+            };
        };
 }());
