@@ -9,7 +9,7 @@
           { name: "loaf of bread", quantity: 1 },
           { name: "Gallon of milk", quantity: 1},
           { name: "Orange", quantity: 8 },
-          { name: "cookies", quantity: 10 }
+          { name: "Bean", quantity: 10 }
       ];
 
       var alreadItem  = [];
