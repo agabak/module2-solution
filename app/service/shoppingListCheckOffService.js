@@ -13,7 +13,7 @@
       ];
 
       var alreadItem  = [];
-      var item ={};
+      var data ={};
 
        function shoppingListCheckOffService() {
                var  service =  this;
