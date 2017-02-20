@@ -17,7 +17,7 @@
           toBuyItem.isShow  =  function(){
                  var isShow= false;
                  var length = toBuyItem.arrayItems.length;
-                 if(length < 0){
+                 if(length === 0){
                     isShow = true;
                  };
                  return isShow;
