@@ -23,12 +23,8 @@
 
               service.removeItem = function(index){
                 data =  items.splice(index,1);
-                for(key in data) {
-                    if(data.hasOwnProperty(key)) {
-                        var value = data[key];
-                        console.log(value);
-                    }
-                }
+                 alreadItem.add(data);
+                 console.log(alreadItem);
               };
        };
 }());
