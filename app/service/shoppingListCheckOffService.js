@@ -23,7 +23,7 @@
 
               service.removeItem = function(index){
                 data =  items.splice(index,1);
-                 console.log(data[index].name, data[index].quantity);
+                 console.log(data[index]);
               };
        };
 }());
