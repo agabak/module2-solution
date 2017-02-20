@@ -13,6 +13,7 @@
       ];
 
       var alreadItem  = [];
+      var item ={};
 
        function shoppingListCheckOffService() {
                var  service =  this;
@@ -21,8 +22,8 @@
               };
 
               service.removeItem = function(index){
-                var item =  items.splice(index,1);
-                 console.log(item)                  
+                item =  items.splice(index,1);
+                 console.log(item.name)
               };
        };
 }());
