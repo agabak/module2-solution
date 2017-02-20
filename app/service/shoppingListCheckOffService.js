@@ -22,8 +22,13 @@
               };
 
               service.removeItem = function(index){
-                item =  items.splice(index,1);
-                 console.log(item[0]);
+                data =  items.splice(index,1);
+                for(key in data) {
+                    if(data.hasOwnProperty(key)) {
+                        var value = data[key];
+                        console.log(value);
+                    }
+                }
               };
        };
 }());
