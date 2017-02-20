@@ -23,6 +23,9 @@
 
               service.removeItem = function(index){
                 data =  items.splice(index,1);
+                var item  = data[index];
+
+                console.log(item['name']);
                  console.log(data[index]);
               };
        };
