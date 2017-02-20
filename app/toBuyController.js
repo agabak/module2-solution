@@ -9,6 +9,6 @@
           var toBuyItem = this;
              toBuyItem.arrayItems = shoppingListCheckOffService.getItems();
           toBuyItem.title = "Items List";
-          toBuyItem.remove = shoppingListCheckOffService.removeItem(index);
+          toBuyItem.remove = shoppingListCheckOffService.removeItem();
      };
 }());
