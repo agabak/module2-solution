@@ -9,13 +9,14 @@
           var alreadyBoughtItem = this;
           alreadyBoughtItem.title = "Items List"
           alreadyBoughtItem.addList = shoppingListCheckOffService.addItem();
-          alreadyBoughtItem.isShow =   false;
 
-          function ChangeStatus(){
-              var length = alreadyBoughtItem.addList.length;
-              if(length > 0){
-                alreadyBoughtItem.isShow = true;
+          alreadyBoughtItem.isShow  =  function(){
+                  var isShow= false
+                  var length = alreadyBoughtItem.addList.length;
+                  if(length > 0){
+                     isShow = true;
+                  };
+                  return isShow;
               };
-          };
      };
 }());
