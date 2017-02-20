@@ -29,6 +29,7 @@
                    quantity:data[index]['quantity']
                 };
                 alreadItem.push(item);
+                console.log(alreadItem);
             };
 
             service.addItem = function(){
