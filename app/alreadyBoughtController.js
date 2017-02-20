@@ -10,5 +10,6 @@
           alreadyBoughtItem.title = "Items List"
           alreadyBoughtItem.addList = shoppingListCheckOffService.addItem();
           alreadyBoughtItem.isShow = shoppingListCheckOffService.addItem().length;
+          console.log(alreadyBoughtItem.isShow);
      };
 }());
