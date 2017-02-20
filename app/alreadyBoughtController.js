@@ -3,10 +3,11 @@
 
     angular.module('shoppingListCheckOff')
            .controller('alreadyBoughtController',alreadyBoughtController);
-     alreadyBoughtController.$nject = [];
+     alreadyBoughtController.$nject = ['shoppingListCheckOffService'];
 
-     function alreadyBoughtController() {
+     function alreadyBoughtController(shoppingListCheckOffService) {
           var alreadyBoughtItem = this;
           alreadyBoughtItem.title = "Items List"
+          alreadyBoughtItem.addList = shoppingListCheckOffService.addItem();
      };
 }());
